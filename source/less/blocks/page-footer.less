@@ -1,5 +1,8 @@
 .page-footer {
   background-color: @white;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
 .page-footer__hashtag {
@@ -8,4 +11,14 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    min-height: 120px;
+    margin-top: 70px;
+  }
 }

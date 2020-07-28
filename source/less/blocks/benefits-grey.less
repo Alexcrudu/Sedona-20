@@ -27,3 +27,28 @@
   text-align: center;
   color: @black;
 }
+
+@media (min-width: @tablet-width) {
+  .benefits-grey {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: @light-grey;
+    justify-content: space-between;
+    order: 3;
+  }
+
+  .benefits-grey__item {
+    max-width: 33%;
+  }
+
+  .benefits-grey__name {
+    font-size: 21px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .benefits-grey {
+    width: 100%;
+  }
+}
