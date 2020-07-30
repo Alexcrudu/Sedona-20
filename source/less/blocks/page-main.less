@@ -1,37 +1,33 @@
 .page-main {
   background-color: @white;
-  position: relative;
 }
 
-  .page-main__image {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    display: block;
-    height: 385px;
-    margin-top: 50px;
-  }
+.page-main__image {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  display: block;
+  height: 385px;
+}
 
-  .page-main__image-info {
-    position: absolute;
-    top: 80px;
-    transform: translate(-50%);
-    left: 50%;
-    z-index: 1;
-  }
+.page-main__image-info {
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+}
 
-  .page-main__benefits-heading {
-    color: @black;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-  }
+.page-main__benefits-heading {
+  color: @black;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-  .page-main__benefits-tips {
-    font-size: 14px;
-    text-transform: uppercase;
-    text-align: center;
-  }
+.page-main__benefits-tips {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 @media (min-width: @tablet-width) {
   .page-main__benefits-heading {
@@ -44,5 +40,11 @@
     background-repeat: no-repeat;
     display: block;
     height: 520px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__image {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }

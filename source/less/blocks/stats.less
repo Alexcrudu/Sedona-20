@@ -21,11 +21,11 @@
   text-transform: uppercase;
 }
 
-.stats__item--one {
+.stats__item--house {
   position: relative;
 }
 
-.stats__item--one::before {
+.stats__item--house::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-house.svg");
@@ -36,33 +36,33 @@
   right: 260px;
 }
 
-.stats__item--two {
+.stats__item--souvenirs {
   position: relative;
 }
 
-.stats__item--two::before {
+.stats__item--souvenirs::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-gift.svg");
   background-size: 32px 38px;
   width: 32px;
   height: 38px;
-  top: 0px;
+  top: 0;
   right: 260px;
 }
 
-.stats__item--three {
+.stats__item--food {
   position: relative;
 }
 
-.stats__item--three::before {
+.stats__item--food::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-burger.svg");
   background-size: 40px 35px;
   width: 40px;
   height: 35px;
-  top: 0px;
+  top: 0;
   right: 260px;
 }
 
@@ -82,7 +82,7 @@
     text-align: center;
   }
 
-  .stats__item--one::before {
+  .stats__item--house::before {
     background-size: 75px 72px;
     width: 75px;
     height: 72px;
@@ -90,11 +90,11 @@
     right: 90px;
   }
 
-  .stats__item--two {
+  .stats__item--souvenirs {
     order: 3;
   }
 
-  .stats__item--two::before {
+  .stats__item--souvenirs::before {
     background-size: 64px 75px;
     width: 64px;
     height: 75px;
@@ -102,7 +102,7 @@
     right: 95px;
   }
 
-  .stats__item--three::before {
+  .stats__item--food::before {
     background-size: 77px 68px;
     width: 77px;
     height: 68px;
