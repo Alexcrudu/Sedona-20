@@ -1,12 +1,84 @@
 .main-nav {
   font-weight: bold;
   position: relative;
+  width: auto;
 }
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  right: 20px;
+  top: 10px;
+  width: 23px;
+  height: 3px;
+  background-color: @blue;
+  box-shadow: 0 8px 0 0 @blue, 0 16px 0 0 @blue;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 26px;
+  right: 30px;
+}
+
+.main-nav--opened .main-nav__toggle::before,
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 4px;
+  background-color: @white;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  transform: rotate(45deg);
+}
+
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(-45deg);
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  display: block;
+}
+
+@media (max-width: @phone-width-only) {
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .main-nav {
     color: @black;
     display: flex;
     min-width: 768px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }

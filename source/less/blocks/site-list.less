@@ -12,7 +12,9 @@
   text-transform: uppercase;
   padding: 8px 80px;
   text-align: center;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  line-height: 2.22;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  border-top: 1px solid rgba(225, 225, 225, 0.2);
 }
 
 .site-list__item-link {
@@ -30,15 +32,16 @@
 
   .site-list__item {
     color: @black;
-    width: 140px;
     font-size: 14px;
     text-align: center;
     box-shadow: none;
+    padding: 8px 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .site-list {
     justify-content: space-around;
+    min-width: @desktop-width;
   }
 }
