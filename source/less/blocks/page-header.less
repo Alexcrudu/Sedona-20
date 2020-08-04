@@ -1,0 +1,38 @@
+.page-header {
+  position: relative;
+}
+
+.page-header__logo {
+  display: block;
+  margin: 0 auto;
+  width: 102px;
+  height: 84px;
+}
+
+.page-header__logo-image {
+  display: block;
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    top: 0;
+  }
+
+  .page-header__logo-image {
+    display: none;
+
+    &--desktop {
+      display: block;
+    }
+  }
+}

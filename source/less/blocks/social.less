@@ -4,6 +4,8 @@
 
 .social__list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social__item {
@@ -11,4 +13,11 @@
   height: 48px;
   background-color: @blue;
   position: relative;
+}
+
+.social__image {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 30%;
 }

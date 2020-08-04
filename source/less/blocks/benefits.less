@@ -5,6 +5,7 @@
 
 .benefits__list {
   list-style: none;
+  padding: 0;
 }
 
 .benefits__item {
@@ -33,4 +34,50 @@
 .benefits__image {
   background-color: @white;
   width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .benefits__item {
+    background-color: @blue;
+    color: @white;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .benefits__image {
+    width: 512px;
+    height: 256px;
+  }
+
+  .benefits__image-wrapper {
+    width: 255px;
+  }
+
+  .benefits__image-wrapper--two {
+    order: 2;
+  }
+
+  .benefits__image--bridge {
+    order: 1;
+  }
+
+  .benefits__name {
+    font-size: 21px;
+  }
+
+  .benefits__text {
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .benefits__image-wrapper {
+    width: 400px;
+  }
+
+  .benefits__image {
+    width: 800px;
+  }
 }

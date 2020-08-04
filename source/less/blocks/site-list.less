@@ -12,4 +12,36 @@
   text-transform: uppercase;
   padding: 8px 80px;
   text-align: center;
+  line-height: 2.22;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  border-top: 1px solid rgba(225, 225, 225, 0.2);
+}
+
+.site-list__item-link {
+  text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    background-color: @white;
+    min-height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .site-list__item {
+    color: @black;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: none;
+    padding: 8px 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    justify-content: space-around;
+    min-width: @desktop-width;
+  }
 }

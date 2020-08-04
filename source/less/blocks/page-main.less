@@ -1,6 +1,5 @@
 .page-main {
   background-color: @white;
-  position: relative;
 }
 
 .page-main__image {
@@ -8,6 +7,12 @@
   background-repeat: no-repeat;
   display: block;
   height: 385px;
+}
+
+.page-main__image-info {
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
 }
 
 .page-main__benefits-heading {
@@ -22,4 +27,24 @@
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__benefits-heading {
+    font-size: 21px;
+    align-content: center;
+  }
+
+  .page-main__image {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 520px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__image {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
 }

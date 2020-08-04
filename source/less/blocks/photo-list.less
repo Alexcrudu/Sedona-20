@@ -17,7 +17,145 @@
   font-size: 14px;
 }
 
+.photo-list__wrapper-like {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+
 .photo-list__like {
   font-weight: bold;
   font-size: 14px;
+}
+
+.photo-list__item {
+  width: auto;
+}
+
+.photo-list__photo--space-tablet,
+.photo-list__photo--space-desktop {
+  display: none;
+}
+
+.photo-list__photo--flower-tablet,
+.photo-list__photo--flower-desktop {
+  display: none;
+}
+
+.photo-list__photo--road-tablet,
+.photo-list__photo--road-desktop {
+  display: none;
+}
+
+.photo-list__photo--devil-bridge-tablet,
+.photo-list__photo--devil-bridge-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-list {
+    width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-list__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .photo-list__photo--space,
+  .photo-list__photo--space-desktop {
+    display: none;
+  }
+
+  .photo-list__photo--space-tablet {
+    display: block;
+    width: auto;
+  }
+
+  .photo-list__photo--flower,
+  .photo-list__photo--flower-desktop {
+    display: none;
+  }
+
+  .photo-list__photo--flower-tablet {
+    display: block;
+    width: auto;
+  }
+
+  .photo-list__photo--road,
+  .photo-list__photo--road-desktop {
+    display: none;
+  }
+
+  .photo-list__photo--road-tablet {
+    display: block;
+    width: auto;
+  }
+
+  .photo-list__photo--devil-bridge,
+  .photo-list__photo--devil-bridge-desktop {
+    display: none;
+  }
+
+  .photo-list__photo--devil-bridge-tablet {
+    display: block;
+    width: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-list {
+    width: 1200px;
+  }
+
+  .photo-list__info {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .photo-list__photo--space,
+  .photo-list__photo--space-tablet {
+    display: none;
+  }
+
+  .photo-list__photo--space-desktop {
+    display: block;
+    width: auto;
+  }
+
+  .photo-list__photo--flower,
+  .photo-list__photo--flower-tablet {
+    display: none;
+  }
+
+  .photo-list__photo--flower-desktop {
+    display: block;
+    width: auto;
+  }
+
+  .photo-list__photo--road,
+  .photo-list__photo--road-tablet {
+    display: none;
+  }
+
+  .photo-list__photo--road-desktop {
+    display: block;
+    width: auto;
+  }
+
+  .photo-list__photo--devil-bridge,
+  .photo-list__photo--devil-bridge-tablet {
+    display: none;
+  }
+
+  .photo-list__photo--devil-bridge-desktop {
+    display: block;
+    width: auto;
+  }
 }

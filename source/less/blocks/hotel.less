@@ -6,18 +6,39 @@
   color: @black;
   font-size: 21px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hotel__text {
   font-size: 14px;
   text-transform: uppercase;
+  max-width: 290px;
+  margin: 0 auto;
 }
 
 .hotel__search {
   color: @white;
+  display: block;
+  width: 280px;
+  height: 58px;
+  margin: 0 auto;
   font-size: 21px;
   text-transform: uppercase;
   text-align: center;
-  padding: 15px 45px;
   background-color: @blue;
+  text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .hotel__question {
+    font-size: 30px;
+  }
+
+  .hotel__text {
+    max-width: 440px;
+  }
+
+  .hotel__search {
+    width: 458px;
+  }
 }
