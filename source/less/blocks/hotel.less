@@ -1,5 +1,6 @@
 .hotel {
   text-align: center;
+  margin-top: 35px;
 }
 
 .hotel__question {
@@ -7,6 +8,7 @@
   font-size: 21px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 23px;
 }
 
 .hotel__text {
@@ -14,28 +16,45 @@
   text-transform: uppercase;
   max-width: 290px;
   margin: 0 auto;
+  opacity: 0.6;
+  line-height: 24px;
+  margin-bottom: 27px;
+}
+
+.hotel__text br {
+  display: none;
 }
 
 .hotel__search {
   color: @white;
   display: block;
   width: 280px;
-  height: 58px;
   margin: 0 auto;
   font-size: 21px;
   text-transform: uppercase;
   text-align: center;
   background-color: @blue;
   text-decoration: none;
+  padding: 16px 0;
 }
 
 @media (min-width: @tablet-width) {
+  .hotel {
+    margin-top: 48px;
+  }
+
   .hotel__question {
     font-size: 30px;
+    margin-bottom: 28px;
   }
 
   .hotel__text {
     max-width: 440px;
+    margin-bottom: 37px;
+  }
+
+  .hotel__text br {
+    display: initial;
   }
 
   .hotel__search {

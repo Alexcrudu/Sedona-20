@@ -18,10 +18,10 @@
               <li class="site-list__item site-list__item--active">
                 <a class="site-list__item-link">Главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--photo">
                 <a class="site-list__item-link" href="photo.html">Фото и видео</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--form">
                 <a class="site-list__item-link" href="form.html">Форма отзыва</a>
               </li>
               <li class="site-list__item">
@@ -37,16 +37,17 @@
       </header>
       <main class="page-main">
         <div class="page-main__image">
-          <img class="page-main__image-info" src="img/text-sedona-index.svg">
+          <img class="page-main__image-info" src="img/text-sedona-index.svg" width="281px" height="214px">
         </div>
         <div class="page-main__benefits">
           <h1 class="page-main__benefits-heading">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
           <p class="page-main__benefits-tips">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
         <section class="benefits">
+          <span class="benefits__image-triangle"></span>
           <ul class="benefits__list">
             <li class="benefits__item">
-              <div class=" benefits__image-wrapper benefits__image-wrapper--one">
+              <div class="benefits__image-wrapper benefits__image-wrapper--one">
                 <h2 class="benefits__name">настоящий городок</h2>
                 <div class="benefits__number">— №1 —</div>
                 <p class="benefits__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -58,22 +59,22 @@
                   <p class="stats__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="stats__item stats__item--souvenirs">
-                  <h3 class="stats__title">сувениры</h3>
-                  <p class="stats__text">не только китайского, но и местного производства!</p>
+                  <h3 class="stats__title stats__title--souvenirs">сувениры</h3>
+                  <p class="stats__text">не только китайского, <br>но и местного производства!</p>
                 </li>
                 <li class="stats__item stats__item--food">
-                  <h3 class="stats__title">еда</h3>
-                  <p class="stats__text">всегда заказывайте фирменный бургер, вы нЕ разочаруетесь!</p>
+                  <h3 class="stats__title stats__title--food ">еда</h3>
+                  <p class="stats__text stats__text--food">всегда заказывайте фирменный бургер, вы нЕ разочаруетесь!</p>
                 </li>
               </ul>
             </li>
-            <li class="benefits__item">
-              <div class="benefits__image-wrapper benefits__image-wrapper--two">
-                <h2 class="benefits__name">там есть мост дьявола</h2>
+            <li class="benefits__item benefits__item--bridge">
+              <div class="benefits__image-wrapper benefits__image-wrapper--bridge">
+                <h2 class="benefits__name benefits__name--bridge">там есть<br> мост дьявола</h2>
                 <div class="benefits__number">— №2 —</div>
-                <p class="benefits__text">да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <p class="benefits__text benefits__text--bridge">да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="benefits__image benefits__image--bridge" src="img/photo-bridge-mobile@1x.jpg" alt="">
+              <img class="benefits__image benefits__image--bridge" src="img/photo-bridge-mobile@1x.jpg" alt="" width="320px" height="260px">
               <ul class="benefits-grey">
                 <li class="benefits-grey__item">
                   <div class="benefits-grey__container">
@@ -84,16 +85,16 @@
                 </li>
                 <li class="benefits-grey__item">
                   <div class="benefits-grey__container">
-                    <h2 class="benefits-grey__name">красивая дорога</h2>
+                    <h2 class="benefits-grey__name benefits-grey__name--road">красивая дорога</h2>
                     <div class="benefits-grey__number">— №4 —</div>
-                    <p class="benefits-grey__text">ехать в седону из лас-вегаса совсем не скучно!</p>
+                    <p class="benefits-grey__text benefits-grey__text--road">ехать в седону из<br> лас-вегаса совсем <br>не скучно!</p>
                   </div>
                 </li>
                 <li class="benefits-grey__item">
                   <div class="benefits-grey__container">
-                    <h2 class="benefits-grey__name">мало туристов</h2>
+                    <h2 class="benefits-grey__name benefits-grey__name--tourist">мало туристов</h2>
                     <div class="benefits-grey__number">— №5 —</div>
-                    <p class="benefits-grey__text">большинство едет в гранд каньон и толпится там</p>
+                    <p class="benefits-grey__text benefits-grey__text--tourist">большинство едет в гранд каньон и толпится там</p>
                   </div>
                 </li>
               </ul>
@@ -102,7 +103,7 @@
         </section>
         <section class="hotel">
           <h2 class="hotel__question">заинтересовались?</h2>
-          <p class="hotel__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="hotel__text">укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="hotel__search" href="#">найти гостиницу</a>
         </section>
       </main>

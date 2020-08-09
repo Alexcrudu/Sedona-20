@@ -1,5 +1,6 @@
 .page-header {
   position: relative;
+  margin-bottom: -26px;
 }
 
 .page-header__logo {
@@ -21,11 +22,27 @@
   .page-header {
     margin-bottom: 0;
   }
+
+  .page-header__logo {
+    display: initial;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 2;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
+    width: 185px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
+    z-index: 2;
   }
 
   .page-header__logo-image {

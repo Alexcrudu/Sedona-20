@@ -8,40 +8,77 @@
   padding: 0;
 }
 
+.benefits__image-triangle {
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 37px;
+  top: -5px;
+}
+
 .benefits__item {
   color: @white;
   background-color: @blue;
+  padding-top: 53px;
+
+  &--bridge {
+    padding-top: 25px;
+  }
 }
 
 .benefits__name {
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 12px;
+}
+
+.benefits__name br {
+  display: none;
 }
 
 .benefits__number {
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 3px;
 }
 
 .benefits__text {
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.5;
+
+  &--bridge {
+    margin-bottom: 35px;
+  }
 }
 
 .benefits__image {
   background-color: @white;
   width: 100%;
+
+  &--bridge {
+    height: 260px;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .benefits__list {
+    margin-top: 55px;
+  }
+
   .benefits__item {
     background-color: @blue;
     color: @white;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 0;
   }
 
   .benefits__image {
@@ -49,11 +86,15 @@
     height: 256px;
   }
 
+  .benefits__image-triangle {
+    display: none;
+  }
+
   .benefits__image-wrapper {
     width: 255px;
   }
 
-  .benefits__image-wrapper--two {
+  .benefits__image-wrapper--bridge {
     order: 2;
   }
 
@@ -63,12 +104,30 @@
 
   .benefits__name {
     font-size: 21px;
+    line-height: 26px;
+    padding-top: 40px;
+    margin: 0 50px;
+  }
+
+  .benefits__name--bridge {
+    padding-top: 45px;
+  }
+
+  .benefits__name br {
+    display: initial;
+  }
+
+  .benefits__number {
+    margin-top: 11px;
   }
 
   .benefits__text {
     font-size: 14px;
+    line-height: 21px;
     text-align: center;
     padding: 0;
+    padding-top: 20px;
+    margin: 0 30px;
   }
 }
 
@@ -79,5 +138,27 @@
 
   .benefits__image {
     width: 800px;
+  }
+
+  .benefits__list {
+    margin-top: 44px;
+  }
+
+  .benefits__name {
+    padding-top: 44px;
+    margin: 0 95px;
+  }
+
+  .benefits__name--bridge {
+    padding-top: 51px;
+  }
+
+  .benefits__text {
+    padding-top: 22px;
+    margin: 0 60px;
+  }
+
+  .benefits__text--bridge {
+    margin: 0 85px;
   }
 }
