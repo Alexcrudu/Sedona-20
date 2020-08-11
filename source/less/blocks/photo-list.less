@@ -11,25 +11,73 @@
   font-weight: bold;
   text-transform: uppercase;
   display: block;
+  margin-top: 8px;
+  margin-bottom: 5px;
 }
 
 .photo-list__author {
   font-size: 14px;
+  opacity: 0.6;
+  margin-top: 7px;
+  margin-bottom: 12px;
+  font-weight: 400;
 }
 
 .photo-list__wrapper-like {
   display: flex;
   justify-content: space-between;
-  width: 70px;
+  width: 92px;
+  padding-top: 15px;
+}
+
+.photo-list__icon-button {
+  background-color: transparent;
+  border: none;
+  padding-bottom: 12px;
+  padding-left: 0;
 }
 
 .photo-list__like {
+  position: relative;
   font-weight: bold;
   font-size: 14px;
+  width: 57px;
+  display: block;
+  padding-top: 3px;
+}
+
+.photo-list__icon-like {
+  fill: @black;
+  opacity: 0.3;
 }
 
 .photo-list__item {
   width: auto;
+  margin-bottom: 0;
+
+  &--space {
+    margin-bottom: 5px;
+  }
+}
+
+.photo-list__photo {
+  margin-top: 22px;
+}
+
+.photo-list__photo--space {
+  margin-top: 54px;
+}
+
+.photo-list__photo--flower {
+  margin-top: 24px;
+}
+
+.photo-list__photo--road {
+  margin-top: 26px;
+}
+
+.photo-list__photo--devil-bridge {
+  margin-top: 27px;
 }
 
 .photo-list__photo--space-tablet,
@@ -58,12 +106,36 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 80px;
+  }
+
+  .photo-list__photo {
+    margin-top: 0;
   }
 
   .photo-list__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
+    background-color: #f2f2f2;
+  }
+
+  .photo-list__wrapper {
+    margin-left: 21px;
+    margin-bottom: 18px;
+  }
+
+  .photo-list__wrapper-like {
+    margin-right: 13px;
+    width: 69px;
+    margin-bottom: 18px;
+    padding-top: 20px;
+  }
+
+  .photo-list__icon-button {
+    padding-bottom: 0;
+    padding-right: 8px;
   }
 
   .photo-list__photo--space,
@@ -104,19 +176,28 @@
   .photo-list__photo--devil-bridge-tablet {
     display: block;
     width: auto;
+  }
+
+  .photo-list__name {
+    margin-top: 18px;
+    margin-bottom: 5px;
+  }
+
+  .photo-list__item--space {
+    margin-bottom: 0;
+  }
+
+  .photo-list__item {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-list {
     width: 1200px;
-  }
-
-  .photo-list__info {
-    height: 80px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-wrap: wrap;
   }
 
   .photo-list__photo--space,
@@ -157,5 +238,48 @@
   .photo-list__photo--devil-bridge-desktop {
     display: block;
     width: auto;
+  }
+
+  .photo-list__item {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .photo-list__info {
+    position: absolute;
+    height: 80px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-list__name {
+    color: @white;
+    margin: 0;
+  }
+
+  .photo-list__author {
+    color: @white;
+    margin: 0;
+    padding-top: 7px;
+    opacity: 1;
+  }
+
+  .photo-list__wrapper-like {
+    padding-top: 0;
+  }
+
+  .photo-list__like {
+    color: @white;
+    margin: 0;
+    padding-top: 7px;
+  }
+
+  .photo-list__icon-like {
+    fill: @white;
+    opacity: 1;
   }
 }

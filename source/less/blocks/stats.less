@@ -3,22 +3,46 @@
   list-style: none;
   color: @black;
   padding: 0;
+  margin-top: -23px;
 }
 
 .stats__item {
   margin: 0 auto;
   padding: 0;
+  padding-left: 70px;
+  padding-right: 30px;
+
+  &--food {
+    padding-bottom: 25px;
+    position: relative;
+  }
 }
 
 .stats__title {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  padding-top: 37px;
+  margin-bottom: 10px;
+
+  &--souvenirs {
+    padding-top: 12px;
+  }
+
+  &--food {
+    padding-top: 10px;
+  }
 }
 
 .stats__text {
   font-size: 14px;
   text-transform: uppercase;
+  line-height: 21px;
+  padding-top: 2px;
+}
+
+.stats__text br {
+  display: none;
 }
 
 .stats__item--house {
@@ -32,8 +56,8 @@
   background-size: 37px 36px;
   width: 37px;
   height: 36px;
-  top: 30px;
-  right: 260px;
+  top: 28px;
+  right: 261px;
 }
 
 .stats__item--souvenirs {
@@ -48,11 +72,7 @@
   width: 32px;
   height: 38px;
   top: 0;
-  right: 260px;
-}
-
-.stats__item--food {
-  position: relative;
+  right: 263px;
 }
 
 .stats__item--food::before {
@@ -62,24 +82,33 @@
   background-size: 40px 35px;
   width: 40px;
   height: 35px;
-  top: 0;
-  right: 260px;
+  top: 4px;
+  right: 262px;
 }
 
 @media (min-width: @tablet-width) {
   .stats {
     display: flex;
     min-width: 768px;
+    margin-top: 0;
+    padding-bottom: 30px;
   }
 
   .stats__item {
     width: 33%;
+    padding: 0;
+    padding-top: 115px;
   }
 
   .stats__title {
     font-size: 21px;
     font-weight: bold;
     text-align: center;
+    padding-top: 20px;
+
+    &--souvenirs {
+      padding-top: 30px;
+    }
   }
 
   .stats__item--house::before {
@@ -112,6 +141,45 @@
 
   .stats__text {
     text-align: center;
-    margin: 0 45px;
+    margin: 0 30px;
+    padding-bottom: 29px;
+    padding-top: 14px;
+
+    &--food {
+      margin: 0 50px;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .stats {
+    padding-bottom: 50px;
+  }
+
+  .stats__item--house::before {
+    right: 162px;
+  }
+
+  .stats__item--souvenirs::before {
+    top: 58px;
+    right: 167px;
+  }
+
+  .stats__item--food::before {
+    top: 64px;
+    right: 161px;
+  }
+
+  .stats__title--souvenirs {
+    padding-top: 22px;
+  }
+
+  .stats__text {
+    margin: 0 55px;
+  }
+
+  .stats__text br {
+    display: initial;
   }
 }

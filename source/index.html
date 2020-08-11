@@ -18,10 +18,10 @@
               <li class="site-list__item site-list__item--active">
                 <a class="site-list__item-link">Главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--photo">
                 <a class="site-list__item-link" href="photo.html">Фото и видео</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--form">
                 <a class="site-list__item-link" href="form.html">Форма отзыва</a>
               </li>
               <li class="site-list__item">
@@ -37,16 +37,17 @@
       </header>
       <main class="page-main">
         <div class="page-main__image">
-          <img class="page-main__image-info" src="img/text-sedona-index.svg">
+          <img class="page-main__image-info" src="img/text-sedona-index.svg" width="281px" height="214px">
         </div>
         <div class="page-main__benefits">
           <h1 class="page-main__benefits-heading">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
           <p class="page-main__benefits-tips">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
         <section class="benefits">
+          <span class="benefits__image-triangle"></span>
           <ul class="benefits__list">
             <li class="benefits__item">
-              <div class=" benefits__image-wrapper benefits__image-wrapper--one">
+              <div class="benefits__image-wrapper benefits__image-wrapper--one">
                 <h2 class="benefits__name">настоящий городок</h2>
                 <div class="benefits__number">— №1 —</div>
                 <p class="benefits__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -58,22 +59,22 @@
                   <p class="stats__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="stats__item stats__item--souvenirs">
-                  <h3 class="stats__title">сувениры</h3>
-                  <p class="stats__text">не только китайского, но и местного производства!</p>
+                  <h3 class="stats__title stats__title--souvenirs">сувениры</h3>
+                  <p class="stats__text">не только китайского, <br>но и местного производства!</p>
                 </li>
                 <li class="stats__item stats__item--food">
-                  <h3 class="stats__title">еда</h3>
-                  <p class="stats__text">всегда заказывайте фирменный бургер, вы нЕ разочаруетесь!</p>
+                  <h3 class="stats__title stats__title--food ">еда</h3>
+                  <p class="stats__text stats__text--food">всегда заказывайте фирменный бургер, вы нЕ разочаруетесь!</p>
                 </li>
               </ul>
             </li>
-            <li class="benefits__item">
-              <div class="benefits__image-wrapper benefits__image-wrapper--two">
-                <h2 class="benefits__name">там есть мост дьявола</h2>
+            <li class="benefits__item benefits__item--bridge">
+              <div class="benefits__image-wrapper benefits__image-wrapper--bridge">
+                <h2 class="benefits__name benefits__name--bridge">там есть<br> мост дьявола</h2>
                 <div class="benefits__number">— №2 —</div>
-                <p class="benefits__text">да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <p class="benefits__text benefits__text--bridge">да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="benefits__image benefits__image--bridge" src="img/photo-bridge-mobile@1x.jpg" alt="">
+              <img class="benefits__image benefits__image--bridge" src="img/photo-bridge-mobile@1x.jpg" alt="" width="320px" height="260px">
               <ul class="benefits-grey">
                 <li class="benefits-grey__item">
                   <div class="benefits-grey__container">
@@ -84,16 +85,16 @@
                 </li>
                 <li class="benefits-grey__item">
                   <div class="benefits-grey__container">
-                    <h2 class="benefits-grey__name">красивая дорога</h2>
+                    <h2 class="benefits-grey__name benefits-grey__name--road">красивая дорога</h2>
                     <div class="benefits-grey__number">— №4 —</div>
-                    <p class="benefits-grey__text">ехать в седону из лас-вегаса совсем не скучно!</p>
+                    <p class="benefits-grey__text benefits-grey__text--road">ехать в седону из<br> лас-вегаса совсем <br>не скучно!</p>
                   </div>
                 </li>
                 <li class="benefits-grey__item">
                   <div class="benefits-grey__container">
-                    <h2 class="benefits-grey__name">мало туристов</h2>
+                    <h2 class="benefits-grey__name benefits-grey__name--tourist">мало туристов</h2>
                     <div class="benefits-grey__number">— №5 —</div>
-                    <p class="benefits-grey__text">большинство едет в гранд каньон и толпится там</p>
+                    <p class="benefits-grey__text benefits-grey__text--tourist">большинство едет в гранд каньон и толпится там</p>
                   </div>
                 </li>
               </ul>
@@ -102,7 +103,7 @@
         </section>
         <section class="hotel">
           <h2 class="hotel__question">заинтересовались?</h2>
-          <p class="hotel__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="hotel__text">укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="hotel__search" href="#">найти гостиницу</a>
         </section>
       </main>
@@ -130,8 +131,9 @@
         <div class="copyright">
           <b class="copyright__work">разработано</b>
           <a class="copyright__image" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__icon" src="img/logo-htmlacademy.svg
-            " alt="">
+            <svg class="copyright__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
           </a>
         </div>
       </footer>
