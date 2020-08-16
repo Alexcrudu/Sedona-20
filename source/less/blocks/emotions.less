@@ -1,0 +1,144 @@
+.emotions {
+  text-align: center;
+  position: relative;
+  margin-top: 2px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    min-width: 320px;
+    height: 1px;
+    background-color: #e6e6e6;
+    left: -22px;
+    top: 0;
+  }
+}
+
+.emotions__info {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 22px;
+  padding-left: 8px;
+}
+
+.emotions__text {
+  border: none;
+  background-color: @light-grey;
+  width: 100%;
+  min-height: 159px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  padding-top: 13px;
+  padding-left: 23px;
+  overflow: auto;
+  resize: none;
+  margin-bottom: 45px;
+  font-family: "PTSans", sans-serif;
+}
+
+.emotions__button {
+  display: block;
+  color: @white;
+  background-color: @blue;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 49px;
+  text-decoration: none;
+}
+
+.emotions__rule {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .emotions {
+    width: 100%;
+    margin: 0 40px;
+    margin-top: 25px;
+    margin-bottom: 37px;
+  }
+
+  .emotions__info {
+    font-size: 21px;
+    margin-top: 11px;
+    padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background-color: #e6e6e6;
+      right: 10px;
+      top: 30px;
+    }
+  }
+
+  .emotions__text {
+    margin-top: 34px;
+    padding-left: 21px;
+    padding-top: 17px;
+    margin-bottom: 52px;
+    min-height: 160px;
+    box-sizing: border-box;
+  }
+
+  .emotions__button {
+    padding: 15px 75px;
+    padding-left: 65px;
+  }
+
+  .emotions__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .emotions__rule {
+    display: initial;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @grey;
+    margin-top: 20px;
+  }
+
+  .emotions::before {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotions {
+    margin: 0;
+  }
+
+  .emotions__info::before {
+    width: 280px;
+    left: 0;
+    top: 28px;
+  }
+
+  .emotions__info::after {
+    width: 280px;
+    right: 0;
+    top: 28px;
+  }
+
+  .emotions__button {
+    padding: 15px 150px;
+  }
+
+  .emotions__text {
+    padding-left: 20px;
+    margin-top: 35px;
+    box-sizing: border-box;
+    min-height: 160px;
+  }
+
+  .emotions__rule {
+    padding: 0;
+  }
+}

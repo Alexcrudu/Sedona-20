@@ -1,0 +1,120 @@
+.impression {
+  margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    min-width: 320px;
+    height: 1px;
+    background-color: #e6e6e6;
+    left: 0;
+    top: -20px;
+  }
+}
+
+.impression__wrapper {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.impression__info {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 45px;
+  margin-bottom: 24px;
+}
+
+.impression__text {
+  position: absolute;
+  appearance: none;
+}
+
+.impression__radio {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border: solid 5px @light-grey;
+  border-radius: 50%;
+  background-color: @light-grey;
+}
+
+.impression__text:checked + .impression__radio::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: solid 3px @grey;
+  border-radius: 50%;
+  background-color: @grey;
+  background-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.impression__label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .impression {
+    order: -1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 292px;
+      background-color: #e6e6e6;
+      right: 0;
+      top: 52px;
+    }
+  }
+
+  .impression__info {
+    font-size: 21px;
+    padding-right: 9px;
+    margin-bottom: 58px;
+  }
+
+  .impression__wrapper {
+    margin-bottom: 23px;
+    padding-right: 23px;
+  }
+
+  .impression__label {
+    margin-left: 18px;
+  }
+
+  .impression::before {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression {
+    padding: 0;
+    margin-bottom: 44px;
+  }
+
+  .impression__info {
+    margin-bottom: 58px;
+    margin-top: 30px;
+    padding-right: 48px;
+  }
+
+  .impression__wrapper {
+    align-self: flex-start;
+    padding-left: 5px;
+  }
+}

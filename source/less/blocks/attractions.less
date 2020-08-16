@@ -1,0 +1,182 @@
+.attractions {
+  position: relative;
+  margin-top: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    min-width: 320px;
+    height: 1px;
+    background-color: #e6e6e6;
+    left: -20px;
+    top: 2px;
+  }
+}
+
+.attractions__info {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.attractions__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.attractions__text {
+  position: absolute;
+  appearance: none;
+}
+
+.attractions__checkbox {
+  width: 47px;
+  height: 47px;
+  border: solid 5px @light-grey;
+  border-radius: 10%;
+  background-color: @light-grey;
+}
+
+.attractions__text + .attractions__checkbox {
+  background-image: url("../../img/icon-tick.svg");
+  background-size: 24px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.attractions__label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 23px;
+}
+
+.attractions__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .attractions {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 455px;
+    margin: 0 auto;
+    margin-top: 28px;
+  }
+
+  .attractions__wrapper {
+    width: 50%;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .attractions__checkbox {
+    margin-left: 134px;
+  }
+
+  .attractions__wrapper:nth-of-type(even) {
+    .attractions__checkbox {
+      margin-left: 30px;
+    }
+  }
+
+  .attractions__info {
+    width: 100%;
+    padding: 0 165px;
+    font-size: 21px;
+    margin-bottom: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background-color: #e6e6e6;
+      left: 40px;
+      top: 49px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background-color: #e6e6e6;
+      right: 40px;
+      top: 49px;
+    }
+  }
+
+  .attractions__section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: initial;
+  }
+
+  .attractions__label {
+    margin-left: 24px;
+  }
+
+  .attractions::before {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attractions {
+    max-width: 100%;
+    margin-bottom: 57px;
+  }
+
+  .attractions__wrapper {
+    width: auto;
+    margin-bottom: 0;
+
+    .attractions__checkbox {
+      margin-left: 0;
+    }
+  }
+
+  .attractions__info {
+    padding: 0 280px;
+    margin-bottom: 41px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 1px;
+      background-color: #e6e6e6;
+      left: 103px;
+      top: 47px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 1px;
+      background-color: #e6e6e6;
+      right: 100px;
+      top: 47px;
+    }
+  }
+
+  .attractions__section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .attractions__wrapper:nth-of-type(even) {
+    .attractions__checkbox {
+      margin-left: 0;
+    }
+  }
+}
