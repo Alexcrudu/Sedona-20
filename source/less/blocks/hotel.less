@@ -36,6 +36,12 @@
   background-color: @blue;
   text-decoration: none;
   padding: 16px 0;
+  margin-bottom: 50px;
+}
+
+.hotel__map--tablet,
+.hotel__map--desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -60,5 +66,30 @@
 
   .hotel__search {
     width: 458px;
+    margin-bottom: 58px;
+  }
+
+  .hotel__map--tablet {
+    display: initial;
+  }
+
+  .hotel__map--mobile,
+  .hotel__map--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hotel__map--desktop {
+    display: initial;
+  }
+
+  .hotel__map--mobile,
+  .hotel__map--tablet {
+    display: none;
+  }
+  .hotel__search {
+    width: 458px;
+    margin-bottom: 67px;
   }
 }

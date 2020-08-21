@@ -1,0 +1,71 @@
+.video
+ {
+   margin-top: 38px;
+ }
+
+ .video__question {
+   font-size: 18px;
+   font-weight: bold;
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 31px;
+ }
+
+ .video__text {
+   font-size: 14px;
+   text-transform: uppercase;
+   text-align: center;
+   opacity: 0.6;
+   line-height: 24px;
+   padding: 0 30px;
+   margin-bottom: 34px;
+}
+
+.video__window--tablet,
+.video__window--desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    margin-top: 51px;
+  }
+
+  .video__text {
+    padding: 0 155px;
+    margin-bottom: 78px;
+  }
+  .video__window--tablet {
+    display: initial;
+    margin: 0 62px;
+  }
+
+  .video__window--mobile,
+  .video__window--desktop {
+    display: none;
+  }
+
+  .video__question {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    margin-top: 53px;
+  }
+
+  .video__text {
+    padding: 0 370px;
+  }
+
+  .video__window--desktop {
+    display: initial;
+    margin: 0 198px;
+  }
+
+  .video__window--mobile,
+  .video__window--tablet {
+    display: none;
+  }
+}
