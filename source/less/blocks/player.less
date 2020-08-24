@@ -1,0 +1,90 @@
+.player {
+  width: 280px;
+  height: 66px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  margin-top: -4px;
+  margin-bottom: 42px;
+}
+
+.player__volume {
+  order: -1;
+  width: 100%;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: -45px;
+}
+
+.player__wrapper {
+  margin-left: auto;
+}
+
+.player__replay,
+.player__subtitles,
+.player__fullscreen {
+  border: none;
+}
+
+.player__replay {
+  height: 20px;
+  padding-left: 25px;
+}
+
+.player__subtitles {
+  padding-right: 20px;
+}
+
+.player__fullscreen {
+  padding-right: 23px;
+}
+
+.player__svg {
+  fill: #5c6870;
+}
+
+@media (min-width: @tablet-width) {
+  .player {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 648px;
+    height: 95px;
+    justify-content: space-between;
+  }
+
+  .player__volume {
+    order: initial;
+    width: initial;
+    margin-top: 0;
+  }
+
+  .player__wrapper {
+    margin-left: initial;
+    padding-top: 36px;
+    padding-right: 17px;
+  }
+
+  .player__replay {
+    background-color: transparent;
+    padding-top: 36px;
+    padding-left: 36px;
+  }
+
+  .player__subtitles {
+    background-color: transparent;
+  }
+
+  .player__fullscreen {
+    background-color: transparent;
+  }
+
+  .player__svg {
+    fill: @white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .player {
+    width: 800px;
+  }
+}

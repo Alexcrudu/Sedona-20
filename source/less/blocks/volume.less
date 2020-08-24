@@ -1,0 +1,38 @@
+.volume {
+  position: relative;
+}
+
+.volume__scale {
+  position: absolute;
+  width: 235px;
+  height: 3px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  top: 21px;
+  right: 25px;
+}
+
+.volume__button {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: none;
+  background-color: rgba(225, 225, 225, 100%);
+  border-radius: 50%;
+  left: 58px;
+  top: 17px;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .volume__scale {
+    width: 389px;
+    top: 46px;
+    right: -194px;
+  }
+
+  .volume__button {
+    top: 42px;
+    left: -82px;
+  }
+}

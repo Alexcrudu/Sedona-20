@@ -4,7 +4,7 @@
   display: none;
 
   &--success {
-    display: block;
+    display: none;
   }
 }
 
@@ -53,5 +53,49 @@
 
 .pop-up__button-grey {
   background-color: #f2f2f2;
-  padding: 0 21px;
+  padding: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .pop-up {
+    width: 400px;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    left: 50%;
+
+    &--success {
+      width: 640px;
+    }
+  }
+
+  .pop-up__info {
+    font-size: 30px;
+    padding: 0 80px;
+    margin-bottom: 27px;
+  }
+
+  .pop-up__text {
+    padding: 0 55px;
+    margin-bottom: 38px;
+
+    &--success {
+      margin-bottom: 42px;
+    }
+  }
+
+  .pop-up__button {
+    font-size: 20px;
+    padding: 18px 122px;
+    margin-bottom: 47px;
+
+    &--success {
+      margin-bottom: 0;
+      font-size: 18px;
+      padding: 18px 156px;
+    }
+  }
+
+  .pop-up__button-grey {
+    padding: 44px;
+  }
 }
