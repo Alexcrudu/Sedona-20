@@ -1,0 +1,43 @@
+.video-block__window--tablet,
+.video-block__window--desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .video-block {
+    position: relative;
+  }
+
+  .video-block__player {
+    position: absolute;
+    left: 62px;
+    bottom: -38px;
+  }
+
+  .video-block__window--tablet {
+    display: initial;
+    margin: 0 62px;
+  }
+
+  .video-block__window--mobile,
+  .video-block__window--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-block__player {
+    left: 197px;
+    bottom: 5px;
+  }
+
+  .video-block__window--desktop {
+    display: initial;
+    margin: 0 198px;
+  }
+
+  .video-block__window--mobile,
+  .video-block__window--tablet {
+    display: none;
+  }
+}

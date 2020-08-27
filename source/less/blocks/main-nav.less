@@ -28,6 +28,16 @@
   height: 3px;
   background-color: @blue;
   box-shadow: 0 8px 0 0 @blue, 0 16px 0 0 @blue;
+
+  &:hover {
+    background-color: rgba(129, 179, 210, 0.6);
+    box-shadow: 0 8px 0 0 @blue, 0 16px 0 0 @blue;
+  }
+
+  &:focus {
+    background-color: rgba(129, 179, 210, 0.3);
+    box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {

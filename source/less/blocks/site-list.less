@@ -7,6 +7,7 @@
 
 .site-list__item {
   color: @white;
+  background-color: @blue;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
@@ -15,10 +16,23 @@
   line-height: 2.22;
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   border-top: 1px solid rgba(225, 225, 225, 0.2);
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:focus {
+    background-color: #5496bd;
+  }
 }
 
 .site-list__item-link {
   text-decoration: none;
+  color: @white;
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -53,6 +67,18 @@
     }
 
     &:focus {
+      opacity: 0.3;
+    }
+
+    &--active {
+      color: #766357;
+    }
+
+    &--active:hover {
+      color: #604e43;
+    }
+
+    &--active:focus {
       opacity: 0.3;
     }
   }
