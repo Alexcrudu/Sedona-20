@@ -36,6 +36,25 @@
   background-color: @blue;
   text-decoration: none;
   padding: 16px 0;
+  margin-bottom: 50px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:focus {
+    opacity: 0.3;
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+.hotel__map {
+  width: 100%;
+  height: 350px;
 }
 
 @media (min-width: @tablet-width) {
@@ -60,5 +79,13 @@
 
   .hotel__search {
     width: 458px;
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hotel__search {
+    width: 458px;
+    margin-bottom: 67px;
   }
 }

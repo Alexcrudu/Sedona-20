@@ -2,7 +2,7 @@
   background-color: @white;
   width: 150px;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 32px;
 }
 
 .page-footer__hashtag {
@@ -20,10 +20,18 @@
     display: flex;
     justify-content: space-around;
     min-height: 120px;
-    padding-top: 44px;
+    padding-top: 16px;
   }
 
   .page-footer__hashtag {
     padding-top: 27px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 0 114px;
+    padding-top: 18px;
+    justify-content: space-between;
   }
 }

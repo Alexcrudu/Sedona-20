@@ -1,0 +1,22 @@
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  position: relative;
+}
+
+.info__pop-up {
+  position: fixed;
+  z-index: 2;
+  top: 65px;
+  left: 0;
+  background-color: @white;
+}
+
+@media (min-width: @desktop-width) {
+  .info {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+}

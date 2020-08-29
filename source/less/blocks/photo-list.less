@@ -52,12 +52,63 @@
 }
 
 .photo-list__item {
+  position: relative;
   width: auto;
   margin-bottom: 0;
 
   &--space {
     margin-bottom: 5px;
   }
+}
+
+.photo-list__item--space::before {
+  content: "";
+  position: absolute;
+  min-width: 320px;
+  height: 1px;
+  background-color: #e6e6e6;
+  left: -22px;
+  top: 32px;
+}
+
+.photo-list__item--flower::before {
+  content: "";
+  position: absolute;
+  min-width: 320px;
+  height: 1px;
+  background-color: #e6e6e6;
+  left: -22px;
+  top: 0;
+}
+
+.photo-list__item--road::before {
+  content: "";
+  position: absolute;
+  min-width: 320px;
+  height: 1px;
+  background-color: #e6e6e6;
+  left: -22px;
+  top: 3px;
+}
+
+.photo-list__item--devil-bridge::before {
+  content: "";
+  position: absolute;
+  min-width: 320px;
+  height: 1px;
+  background-color: #e6e6e6;
+  left: -22px;
+  top: 5px;
+}
+
+.photo-list__item--devil-bridge::after {
+  content: "";
+  position: absolute;
+  min-width: 320px;
+  height: 1px;
+  background-color: #e6e6e6;
+  left: -22px;
+  bottom: -7px;
 }
 
 .photo-list__photo {
@@ -190,6 +241,17 @@
   .photo-list__item {
     margin-bottom: 0;
   }
+
+  .photo-list__item--space::before,
+  .photo-list__item--flower::before,
+  .photo-list__item--devil-bridge::before,
+  .photo-list__item--road::before {
+    display: none;
+  }
+
+  .photo-list__item--devil-bridge::after {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -268,8 +330,13 @@
     opacity: 1;
   }
 
+  .photo-list__wrapper {
+    margin-bottom: 0;
+  }
+
   .photo-list__wrapper-like {
     padding-top: 0;
+    margin-bottom: 0;
   }
 
   .photo-list__like {

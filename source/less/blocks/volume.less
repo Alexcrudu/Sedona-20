@@ -1,0 +1,44 @@
+.volume {
+  position: relative;
+}
+
+.volume__scale {
+  position: absolute;
+  width: 235px;
+  height: 3px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  top: 21px;
+  right: 25px;
+}
+
+.volume__button {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: none;
+  background-color: rgba(225, 225, 225, 100%);
+  border-radius: 50%;
+  left: 58px;
+  top: 17px;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .volume {
+    position: initial;
+    width: 389px;
+    background: transparent;
+  }
+
+  .volume__scale {
+    width: 100%;
+    position: initial;
+    margin-top: 45px;
+  }
+
+  .volume__button {
+    top: 42px;
+    left: 209px;
+  }
+}

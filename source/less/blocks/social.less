@@ -17,6 +17,14 @@
   background-color: @blue;
   position: relative;
   cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:focus {
+    background-color: #5496bd;
+  }
 }
 
 .social__image {
@@ -24,12 +32,16 @@
   transform: translate(-50%);
   left: 50%;
   top: 30%;
+  fill: @white;
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .social {
     margin-top: 0;
     min-width: 150px;
-    padding-right: 6px;
   }
 }

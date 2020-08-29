@@ -19,10 +19,10 @@
                 <a class="site-list__item-link" href="index.html">Главная</a>
               </li>
               <li class="site-list__item site-list__item--photo">
-                <a class="site-list__item-link">Фото и видео</a>
+                <a class="site-list__item-link" href="photo.html">Фото и видео</a>
               </li>
-              <li class="site-list__item site-list__item--form site-list__item--active">
-                <a class="site-list__item-link" href="form.html">Форма отзыва</a>
+              <li class="site-list__item site-list__item--form">
+                <a class="site-list__item-link site-list__item-link--active">Форма отзыва</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__item-link href="https://htmlacademy.ru/intensive/adaptive"">html academy</a>
@@ -39,6 +39,122 @@
         <div class="page-photo__image">
           <img class="page-photo__image-info" src="img/text-sedona.svg" alt="">
         </div>
+        <div class="form">
+          <h2 class="form__review">оставьте свой отзыв</h2>
+          <p class="form__text">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <section class="info">
+          <div class="info__name name">
+            <h3 class="name__info">представьтесь:</h3>
+            <div class="name__wrapper">
+              <label class="name__label" for="username">имя<sup>*</sup>:</label>
+              <input class="name__text" type="text" id="username" placeholder="Петр">
+            </div>
+            <div class="name__wrapper name__wrapper--surname">
+              <label class="name__label" for="surname">фамилия<sup>*</sup>:</label>
+              <input class="name__text" type="text" id="surname" placeholder="Иванов">
+            </div>
+            <div class="name__wrapper name__wrapper--patronymic">
+              <label class="name__label name__label--patronymic" for="patronymic">отчество:</label>
+              <input class="name__text" type="text" id="patronymic" placeholder="Александрович">
+            </div>
+          </div>
+          <div class="info__contact contact">
+            <h3 class="contact__info">контактная информация:</h3>
+            <div class="contact__wrapper">
+              <label class="contact__label contact__label--mobile" for="phone">контактный телефон<sup>*</sup>:</label>
+              <label class="contact__label contact__label--desktop" for="phone">телефон<sup>*</sup>:</label>
+              <div class="contact__phone">
+                <input class="contact__text contact__text--phone" type="tel" id="phone" placeholder="Введите телефон">
+                <i class="contact__icon contact__icon--phone"></i>
+              </div>
+            </div>
+            <div class="contact__wrapper contact__wrapper--email">
+              <label class="contact__label" for="email">электронная почта<sup>*</sup>:</label>
+              <div class="contact__email">
+                <input class="contact__text contact__text--email" type="email" id="email" placeholder="Введите e-mail">
+                <i class="contact__icon contact__icon--email"></i>
+              </div>
+            </div>
+          </div>
+          <div class="info__impression impression">
+            <h3 class="impression__info">ваше общее впечатление:</h3>
+            <div class="impression__wrapper">
+              <label class="impression__label" for="positive">
+                <input class="impression__text" type="radio" id="positive" name="impression" value="pos" checked>
+                <span class="impression__radio" checked></span>
+                Скорее положительное
+              </label>
+            </div>
+            <div class="impression__wrapper">
+              <label class="impression__label" for="negative">
+                <input class="impression__text" type="radio" id="negative" name="impression" value="neg">
+                <span class="impression__radio"></span>
+                Скорее отрицательное
+              </label>
+            </div>
+            <div class="impression__wrapper impression__wrapper--last">
+              <label class="impression__label" for="equally">
+                <input class="impression__text" type="radio" id="equally" name="impression" value="equal">
+                <span class="impression__radio"></span>
+                Затрудняюсь ответить
+              </label>
+            </div>
+          </div>
+          <div class="info__attractions attractions">
+            <h3 class="attractions__info">посещенные достопримечательности:</h3>
+            <div class="attractions__section">
+              <div class="attractions__wrapper">
+                <label class="attractions__label" for="bridge">
+                  <input class="attractions__text" id="bridge" type="checkbox" checked>
+                  <span class="attractions__checkbox"></span>
+                  Мост Дьявола
+                </label>
+              </div>
+              <div class="attractions__wrapper">
+                <label class="attractions__label" for="mountain">
+                  <input class="attractions__text" id="mountain" type="checkbox" checked>
+                  <span class="attractions__checkbox"></span>
+                  Гора-Колокол
+                </label>
+              </div>
+              <div class="attractions__wrapper">
+                <label class="attractions__label" for="park">
+                  <input class="attractions__text" id="park" type="checkbox" checked>
+                  <span class="attractions__checkbox"></span>
+                  Слайд-парк
+                </label>
+              </div>
+              <div class="attractions__wrapper attractions__wrapper--rocks">
+                <label class="attractions__label" for="rocks">
+                  <input class="attractions__text" id="rocks" type="checkbox" checked>
+                  <span class="attractions__checkbox"></span>
+                  Красные скалы
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="info__pop-up pop-up pop-up--error">
+            <h3 class="pop-up__info">что-то пошло не так!</h3>
+            <p class="pop-up__text">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="pop-up__button" type="button">ok</button>
+          </div>
+          <div class="info__emotions emotions">
+            <h3 class="emotions__info">опишите свои змоции:</h3>
+            <textarea class="emotions__text" name="emotions__text" id="text">Опишите подробно все свои восторги</textarea>
+            <div class="emotions__wrapper">
+              <a class="emotions__button" href="#">отправить отзыв</a>
+              <h4 class="emotions__rule"><sup>*</sup>-обязательные поля</h4>
+            </div>
+          </div>
+          <div class="info__pop-up pop-up pop-up--success">
+            <h3 class="pop-up__info pop-up__info--success">ваш отзыв отправлен!</h3>
+            <p class="pop-up__text pop-up__text--success">спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> в ближайшее время мы опубликуем его на сайте.</p>
+            <div class="pop-up__button-grey">
+              <button class="pop-up__button pop-up__button--success" type="button">закрыть окно</button>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="page-footer">
         <b class="page-footer__hashtag">#visitsedona</b>
@@ -71,5 +187,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
