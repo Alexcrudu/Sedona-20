@@ -19,7 +19,6 @@
   font-size: 18px;
   text-transform: uppercase;
   margin-top: 22px;
-  padding-left: 8px;
 }
 
 .emotions__text {
@@ -32,10 +31,10 @@
   font-weight: bold;
   line-height: 26px;
   padding-top: 13px;
-  padding-left: 23px;
+  padding-left: 21px;
   overflow: auto;
   resize: none;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   font-family: "PTSans", sans-serif;
 }
 
@@ -48,6 +47,7 @@
   text-transform: uppercase;
   padding: 15px 49px;
   text-decoration: none;
+  margin-bottom: 42px;
 }
 
 .emotions__rule {
@@ -58,8 +58,8 @@
   .emotions {
     width: 100%;
     margin: 0 40px;
-    margin-top: 25px;
-    margin-bottom: 37px;
+    margin-top: 10px;
+    margin-bottom: 62px;
   }
 
   .emotions__info {
@@ -73,8 +73,18 @@
       width: 120px;
       height: 1px;
       background-color: #e6e6e6;
-      right: 10px;
-      top: 30px;
+      right: 0;
+      top: 20px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background-color: #e6e6e6;
+      left: 0;
+      top: 20px;
     }
   }
 
@@ -90,6 +100,7 @@
   .emotions__button {
     padding: 15px 75px;
     padding-left: 65px;
+    margin-bottom: 0;
   }
 
   .emotions__wrapper {
@@ -117,7 +128,7 @@
 
   .emotions__info::before {
     width: 280px;
-    left: 0;
+    right: 0;
     top: 28px;
   }
 
@@ -127,8 +138,12 @@
     height: 1px;
     background-color: #e6e6e6;
     width: 280px;
-    right: 0;
+    left: 0;
     top: 28px;
+  }
+
+  .emotions__wrapper {
+    margin-bottom: 25px;
   }
 
   .emotions__button {
@@ -138,6 +153,7 @@
   .emotions__text {
     padding-left: 20px;
     margin-top: 35px;
+    margin-bottom: 55px;
     box-sizing: border-box;
     min-height: 160px;
   }

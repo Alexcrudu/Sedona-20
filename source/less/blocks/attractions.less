@@ -8,8 +8,8 @@
     min-width: 320px;
     height: 1px;
     background-color: #e6e6e6;
-    left: -11px;
-    top: -6px;
+    left: -16px;
+    top: 1px;
   }
 }
 
@@ -17,7 +17,7 @@
   text-align: center;
   font-size: 18px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .attractions__section {
@@ -31,6 +31,9 @@
 }
 
 .attractions__checkbox {
+  position: absolute;
+  left: -80px;
+  top: -16px;
   width: 47px;
   height: 47px;
   border: solid 5px @light-grey;
@@ -38,7 +41,7 @@
   background-color: @light-grey;
 }
 
-.attractions__text + .attractions__checkbox {
+.attractions__text:checked + .attractions__checkbox {
   background-image: url("../../img/icon-tick.svg");
   background-size: 24px 16px;
   background-repeat: no-repeat;
@@ -46,16 +49,21 @@
 }
 
 .attractions__label {
+  position: relative;
   font-size: 18px;
   font-weight: bold;
-  margin-left: 23px;
+  margin-left: 77px;
 }
 
 .attractions__wrapper {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 23px;
+  margin-bottom: 58px;
+
+  &--rocks {
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -73,11 +81,12 @@
     margin-left: 0;
     display: flex;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 65px;
   }
 
   .attractions__checkbox {
-    margin-left: 134px;
+    margin-left: 30px;
+    left: -112px;
   }
 
   .attractions__wrapper:nth-of-type(even) {
@@ -117,6 +126,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: initial;
+    padding-left: 190px;
+    padding-top: 20px;
   }
 
   .attractions__label {
@@ -131,12 +142,13 @@
 @media (min-width: @desktop-width) {
   .attractions {
     max-width: 100%;
-    margin-bottom: 57px;
+    margin-bottom: 71px;
   }
 
   .attractions__wrapper {
     width: auto;
     margin-bottom: 0;
+    padding-left: 57px;
 
     .attractions__checkbox {
       margin-left: 0;
@@ -145,7 +157,7 @@
 
   .attractions__info {
     padding: 0 280px;
-    margin-bottom: 41px;
+    margin-bottom: 39px;
 
     &::before {
       content: "";
@@ -172,6 +184,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-left: 0;
+  }
+
+  .attractions__checkbox {
+    left: -82px;
   }
 
   .attractions__wrapper:nth-of-type(even) {
