@@ -31,8 +31,11 @@
           </div>
         </nav>
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="">
-          <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-sedona-desktop.svg" alt="">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="">
+          </picture>
         </a>
       </header>
       <main class="page-photo">
@@ -44,9 +47,11 @@
         <ul class="photo-list">
           <li class="photo-list__item photo-list__item--space">
             <a class="photo-list__link" href="#">
-              <img class="photo-list__photo photo-list__photo--space" src="img/photo-sunset-mobile@1x.jpg" alt="">
-              <img class="photo-list__photo photo-list__photo--space-tablet" src="img/photo-sunset-tablet@1x.jpg" alt="">
-              <img class="photo-list__photo photo-list__photo--space-desktop" src="img/photo-sunset-desktop@1x.jpg" alt="">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="photo-list__photo photo-list__photo--space" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="фото неродные просторы">
+              </picture>
             </a>
             <div class="photo-list__info">
               <div class="photo-list__wrapper">
@@ -71,9 +76,11 @@
           </li>
           <li class="photo-list__item photo-list__item--flower">
             <a class="photo-list__link" href="#">
-              <img class="photo-list__photo photo-list__photo--flower" src="img/photo-cactus-mobile@1x.jpg" alt="">
-              <img class="photo-list__photo photo-list__photo--flower-tablet" src="img/photo-cactus-tablet@1x.jpg" alt="">
-              <img class="photo-list__photo photo-list__photo--flower-desktop" src="img/photo-cactus-desktop@1x.jpg" alt="">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img class="photo-list__photo photo-list__photo--flower" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="фото местная растительность">
+              </picture>
             </a>
             <div class="photo-list__info">
               <div class="photo-list__wrapper">
@@ -98,9 +105,11 @@
           </li>
           <li class="photo-list__item photo-list__item--road">
             <a class="photo-list__link" href="#">
-              <img class="photo-list__photo photo-list__photo--road" src="img/photo-roads-mobile@1x.jpg" alt="">
-              <img class="photo-list__photo photo-list__photo--road-tablet" src="img/photo-roads-tablet@1x.jpg" alt="">
-              <img class="photo-list__photo photo-list__photo--road-desktop" src="img/photo-roads-desktop@1x.jpg" alt="">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img class="photo-list__photo photo-list__photo--road" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="фото дорога на север">
+              </picture>
             </a>
             <div class="photo-list__info">
               <div class="photo-list__wrapper">
@@ -125,9 +134,11 @@
           </li>
           <li class="photo-list__item photo-list__item--devil-bridge">
             <a class="photo-list__link" href="#">
-              <img class="photo-list__photo photo-list__photo--devil-bridge" src="img/photo-bridge-mobile@1x.jpg" alt="">
-              <img class="photo-list__photo photo-list__photo--devil-bridge-tablet" src="img/photo-bridge-tablet@1x.jpg" alt="">
-              <img class="photo-list__photo photo-list__photo--devil-bridge-desktop" src="img/photo-bridge-desktop@1x.jpg" alt="">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="photo-list__photo photo-list__photo--devil-bridge" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="фото мост дьявола">
+              </picture>
             </a>
             <div class="photo-list__info">
               <div class="photo-list__wrapper">
@@ -156,9 +167,11 @@
             <h3 class="video__question">все еще сомневаетесь?</h3>
             <p class="video__text">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             <div class="video__block video-block">
-              <img class="video-block__window video-block__window--mobile" src="img/video-mobile@1x.jpg"></img>
-              <img class="video-block__window video-block__window--tablet" src="img/video-tablet@1x.jpg"></img>
-              <img class="video-block__window video-block__window--desktop" src="img/video-desktop@1x.jpg"></img>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video-block__window video-block__window--mobile" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x">
+                </picture>
               <div class="video-block__player player">
                 <button class="player__replay">
                   <svg class="player__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">

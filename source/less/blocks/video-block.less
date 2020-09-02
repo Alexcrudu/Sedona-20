@@ -1,6 +1,5 @@
-.video-block__window--tablet,
-.video-block__window--desktop {
-  display: none;
+.video-block__window--mobile {
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -14,14 +13,8 @@
     bottom: -38px;
   }
 
-  .video-block__window--tablet {
-    display: initial;
+  .video-block__window--mobile {
     margin: 0 62px;
-  }
-
-  .video-block__window--mobile,
-  .video-block__window--desktop {
-    display: none;
   }
 }
 
@@ -31,13 +24,7 @@
     bottom: 5px;
   }
 
-  .video-block__window--desktop {
-    display: initial;
+  .video-block__window--mobile {
     margin: 0 198px;
-  }
-
-  .video-block__window--mobile,
-  .video-block__window--tablet {
-    display: none;
   }
 }
