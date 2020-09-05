@@ -31,8 +31,11 @@
           </div>
         </nav>
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="">
-          <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-sedona-desktop.svg" alt="">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="">
+          </picture>
         </a>
       </header>
       <main class="page-photo">
