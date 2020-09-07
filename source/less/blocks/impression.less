@@ -46,6 +46,16 @@
   background-color: @light-grey;
   left: -77px;
   top: -17px;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border: solid 5px #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #d5d5d5;
+    border: solid 5px #d5d5d5;
+  }
 }
 
 .impression__text:checked + .impression__radio::before {
@@ -60,6 +70,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.impression__text:checked:focus + .impression__radio::before {
+  background-color: #333333;
+  opacity: 0.3;
+}
+
+.impression__radio:checked:focus + .impression__radio::before {
+  background-color: #333333;
+  opacity: 0.3;
 }
 
 .impression__label {

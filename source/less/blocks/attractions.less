@@ -39,6 +39,16 @@
   border: solid 5px @light-grey;
   border-radius: 10%;
   background-color: @light-grey;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border: solid 5px #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #d5d5d5;
+    border: solid 5px #d5d5d5;
+  }
 }
 
 .attractions__text:checked + .attractions__checkbox {
@@ -53,6 +63,11 @@
   font-size: 18px;
   font-weight: bold;
   margin-left: 77px;
+}
+
+.attractions__label:hover .attractions__checkbox {
+  background-color: #e5e5e5;
+  border: solid 5px #e5e5e5;
 }
 
 .attractions__wrapper {
