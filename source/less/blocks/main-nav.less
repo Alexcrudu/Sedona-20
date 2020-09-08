@@ -28,16 +28,16 @@
   height: 3px;
   background-color: @blue;
   box-shadow: 0 8px 0 0 @blue, 0 16px 0 0 @blue;
+}
 
-  &:hover {
-    background-color: rgba(129, 179, 210, 0.6);
-    box-shadow: 0 8px 0 0 @blue, 0 16px 0 0 @blue;
-  }
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: rgba(129, 179, 210, 0.6);
+  box-shadow: 0 8px 0 0 rgba(129, 179, 210, 0.6), 0 16px 0 0 rgba(129, 179, 210, 0.6);
+}
 
-  &:focus {
-    background-color: rgba(129, 179, 210, 0.3);
-    box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
-  }
+.main-nav--closed .main-nav__toggle:focus::before {
+  background-color: rgba(129, 179, 210, 0.3);
+  box-shadow: 0 8px 0 0 rgba(129, 179, 210, 0.3), 0 16px 0 0 rgba(129, 179, 210, 0.3);
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -60,6 +60,22 @@
 
 .main-nav--opened .main-nav__toggle::after {
   transform: rotate(-45deg);
+}
+
+.main-nav--opened .main-nav__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.main-nav--opened .main-nav__toggle:focus::before {
+  opacity: 0.3;
+}
+
+.main-nav--opened .main-nav__toggle:hover::after {
+  opacity: 0.6;
+}
+
+.main-nav--opened .main-nav__toggle:focus::after {
+  opacity: 0.3;
 }
 
 .main-nav--nojs .main-nav__toggle {

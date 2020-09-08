@@ -45,6 +45,29 @@
 
 .player__svg {
   fill: #5c6870;
+
+  &--replay {
+    width: 16px;
+    height: 20px;
+  }
+
+  &--subtitles {
+    width: 32px;
+    height: 20px;
+  }
+
+  &--fullscreen {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:focus {
+    fill: rgba(51, 51, 51, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -75,6 +98,14 @@
 
   .player__svg {
     fill: @white;
+
+    &:hover {
+      fill: rgba(225, 225, 225, 0.6);
+    }
+
+    &:focus {
+      fill: rgba(225, 225, 225, 0.3);
+    }
   }
 }
 
