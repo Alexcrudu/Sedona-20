@@ -25,7 +25,7 @@ const styles = () => {
   .pipe(sourcemap.write("."))
   .pipe( gulp.dest('build/css') )
   .pipe(sync.stream());
- }
+}
 
 exports.styles = styles;
 
@@ -106,10 +106,10 @@ const copy = () => {
   ], {
     base: "source"
   })
- .pipe(gulp.dest('build'))
- }
+.pipe(gulp.dest('build'))
+}
 
- exports.copy = copy;
+exports.copy = copy;
 
 exports.build = gulp.series(
   clean, copy, styles, images, converToWebP, buildServer
