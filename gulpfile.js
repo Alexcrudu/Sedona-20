@@ -6,10 +6,11 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const rename = require("gulp-rename");
 const del = require("del");
-const csso = require('gulp-csso');
+const csso = require("gulp-csso");
 const webp = require("gulp-webp");
 const imagemin = require("gulp-imagemin");
 const sync = require("browser-sync").create();
+const uglify = require("gulp-uglify")
 
 // Styles
 
@@ -22,6 +23,7 @@ const styles = () => {
     autoprefixer()
   ]))
   .pipe(csso())
+  .pipe(rename("style.min.css"))
   .pipe(sourcemap.write("."))
   .pipe( gulp.dest('build/css') )
   .pipe(sync.stream());
@@ -59,11 +61,22 @@ const buildServer = (done) => {
   done();
 }
 
+//jsMinification
+
+const jsmin = () => {
+  return gulp.src("source/js/**/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"))
+};
+
+exports.jsmin = jsmin;
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/js/**/*.js").on("change", gulp.series("jsmin"));
 }
 
 
@@ -90,11 +103,15 @@ const converToWebP = ( ) => {
 
 exports.webp = converToWebP;
 
+//Clean
+
 const clean = () => {
   return del("build");
 }
 
 exports.clean = clean;
+
+//Copy
 
 const copy = () => {
   return gulp.src([
@@ -112,7 +129,7 @@ const copy = () => {
 exports.copy = copy;
 
 exports.build = gulp.series(
-  clean, copy, styles, images, converToWebP, buildServer
+  clean, copy, styles, images, jsmin, converToWebP, buildServer
 );
 
 exports.default = gulp.series(
