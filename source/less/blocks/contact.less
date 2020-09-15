@@ -32,10 +32,6 @@
   text-align: left;
   padding-left: 22px;
   margin-bottom: 10px;
-
-  &--desktop {
-    display: none;
-  }
 }
 
 .contact__info {
@@ -73,7 +69,7 @@
   &--phone::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     width: 18px;
     height: 18px;
     transform: translateX(-50%);
@@ -83,7 +79,7 @@
   &--email::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     width: 16px;
     height: 12px;
     transform: translateX(-50%);
@@ -188,20 +184,16 @@
   .contact__label {
     margin-bottom: 0;
     padding: 0;
+  }
 
-    &--desktop {
-      display: initial;
-    }
-
-    &--mobile {
-      display: none;
-    }
+  .contact__label-mobile {
+    display: none;
   }
 
   .contact__phone {
     display: flex;
     flex: 1 auto;
-    margin-left: 17px;
+    margin-left: 8px;
     max-width: 315px;
   }
 
