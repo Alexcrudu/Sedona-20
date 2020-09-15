@@ -24,14 +24,6 @@
   display: flex;
   justify-content: space-between;
   margin-top: 21px;
-
-  &--surname {
-    margin-top: 17px;
-  }
-
-  &--patronymic {
-    margin-top: 20px;
-  }
 }
 
 .name__label {
@@ -45,8 +37,10 @@
 .name__text {
   min-height: 58px;
   flex-grow: 1;
-  border: none;
+  border: 1px solid transparent;
+  box-sizing: border-box;
   background-color: @light-grey;
+  outline: none;
 
   &:hover {
     background-color: #e5e5e5;
