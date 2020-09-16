@@ -22,19 +22,40 @@
 
   &--road {
     padding-top: 27px;
+    position: relative;
   }
 
   &--tourist {
     padding-top: 27px;
+    position: relative;
   }
+}
+
+.benefits-grey__name--road::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 1px;
+  background-color: #e6e6e6;
+  left: -5px;
+  top: 0;
+}
+
+.benefits-grey__name--tourist::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 1px;
+  background-color: #e6e6e6;
+  left: -5px;
+  top: 0;
 }
 
 .benefits-grey__number {
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
-  color: @black;
-  opacity: 0.6;
+  color: #333333;
 }
 
 .benefits-grey__text {
@@ -42,7 +63,7 @@
   line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
-  color: @black;
+  color: #333333;
   margin-bottom: 4px;
   margin-top: 20px;
 
