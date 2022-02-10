@@ -1,3 +1,5 @@
+# To show project Sedona link : [sedona](https://pensive-hawking-6b3ab1.netlify.app)
+
 # Technical task
 
 ### General technical requirements
