@@ -1,60 +1,46 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Technical task
 
-* Студент: [Alexandra Crudu](https://up.htmlacademy.ru/adaptive/20/user/1342439).
-* Наставник:[Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
+### General technical requirements
 
----
+##### 1. Grid: defined in the layout.
 
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
+##### 2. Grid adaptability: mobile, tablet and desktop versions (“fixed” or “rubber”).
 
-Полезный файл:
+##### 3. Graphics adaptability: retinization, vector images.
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+##### 4. Methodology used: BEM.
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+##### 5. Preprocessor used: Less or Sass.
 
----
+##### 6. Used automation tool: Gulp.
 
-### Памятка
+##### 7. Frameworks used: none.
 
-#### 1. Зарегистрируйтесь на Гитхабе
+##### 8. Crossbrowser compatibility: Chrome, Firefox, Safari.
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+##### 9. Typography: partially defined in the layout (others are up to the developer).
 
-#### 2. Создайте форк
+##### 10. Font used: PT Sans.
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1342439-sedona-20) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60807979-e1129f00-a18f-11e9-90d7-b44d2ff2c003.jpg">
+### Explanations for students
+##### 1. All 3 pages are mandatory for layout (the main page, the page with the form, the page with photos and videos).
+##### 2. Layouts have modal windows.
+##### 3. Layouts are made up gradually: first the mobile version, then from the mobile version to the tablet version, and then to the desktop one.
+##### 4. There is no need to prepare raster and vector graphics for the project, they will be added to the project after the lecture "Preprocessors and Automation".
+##### 5. Additional retina and responsive graphics will be added to the project after the Responsive Graphics lecture.
 
-Получится вот так:
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60807980-e1129f00-a18f-11e9-8137-45876f130340.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60807982-e1129f00-a18f-11e9-98c4-0d3bf4b85cf1.jpg">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
-
----
-
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
-
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/1342439-sedona-20.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/1342439-sedona-20
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/1342439-sedona-20/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/1342439-sedona-20?type=dev
+## Block Behavior Requirements
+### All layouts
+##### 1. Between versions (mobile, tablet, desktop), the grid can be either fluid or fixed.
+##### 2. With a fixed grid, the content area is centered and cannot be narrower than the layout width.
+##### 3. The logo on the inner pages is a link to the main page.
+##### 4. The main menu in the mobile version appears above the site header.
+##### 5. The mobile menu can be implemented in two ways:
+##### -implementation without JS;
+##### -implementation using JS.
+##### 6. When implemented without using JS, the main menu in the mobile version should always be open, and the icon with a cross should be hidden.
+##### 7. When implemented using JS, the block with the main menu in the mobile version should open when you click on the “hamburger” icon. When the menu is open, the hamburger icon changes to a cross. Clicking on the cross icon closes the menu.
+##### 8. All hover and click states of elements are specified in the style guide.
+##### 9. The HTML Academy logo in the footer leads to the intensive "Professional HTML and CSS Level 2" landing page.
